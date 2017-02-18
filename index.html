@@ -59,6 +59,22 @@
     statusChangeCallback(response);
   });
   };
+  //define main function
+  function myFunction(x) {
+	var val=0
+    var i,j;
+    for (i = 0; i < 2 ;i++) {
+        str=x.elements[i].value
+		str=str.toLowerCase()
+		console.log(str)
+		for(j=0;j<str.length;j++)
+		{
+		val+=(str.charCodeAt(j)-96);
+		}
+    }
+	if(val%9==0){document.getElementById("demo").innerHTML = 9;}else{document.getElementById("demo").innerHTML = val%9;}
+    
+}
   // Load the SDK asynchronously
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -75,9 +91,20 @@
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
+      myFunction(response.name);
     });
   }
-</script>
+  document.getElementById("demo").style.visibility = 'hidden';
+  function Showresult() {
+  
+  document.getElementById("demo").style.visibility = 'visible';
+  }
+  </script>
+  <button onclick="Showresult()">Know yourself</button>
+<p></p>
+<p id="demo"></p>
+
+  
 
 <!--
   Below we include the Login Button social plugin. This button uses
