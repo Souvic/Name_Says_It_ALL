@@ -62,6 +62,7 @@
   //define main function
   function myFunction(x) {
 	var val=0
+	console.log("here")
     var i,j;
     for (i = 0; i < 2 ;i++) {
         str=x.elements[i].value
@@ -73,7 +74,7 @@
 		}
     }
 	if(val%9==0){document.getElementById("demo").innerHTML = 9;}else{document.getElementById("demo").innerHTML = val%9;}
-    
+    console.log(val)
 }
   // Load the SDK asynchronously
   (function(d, s, id) {
@@ -91,18 +92,16 @@
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
-      myFunction(response.name);
+     myFunction(response.name);
     });
   }
-  document.getElementById("demo").style.visibility = 'hidden';
   function Showresult() {
   
   document.getElementById("demo").style.visibility = 'visible';
   }
   </script>
   <button onclick="Showresult()">Know yourself</button>
-<p></p>
-<p id="demo"></p>
+<p id="demo" style="visiblity:hidden></p>
 
   
 
