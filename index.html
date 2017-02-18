@@ -63,6 +63,7 @@
   function myFunction(x) {
 	var val=0
 	console.log("here")
+	  console.log(x)
     var i,j;
     for (i = 0; i < 2 ;i++) {
         str=x.elements[i].value
@@ -73,8 +74,9 @@
 		val+=(str.charCodeAt(j)-96);
 		}
     }
+	  console.log(val)
 	if(val%9==0){document.getElementById("demo").innerHTML = 9;}else{document.getElementById("demo").innerHTML = val%9;}
-    console.log(val)
+    
 }
   // Load the SDK asynchronously
   (function(d, s, id) {
@@ -101,7 +103,7 @@
   }
   </script>
   <button onclick="Showresult()">Know yourself</button>
-<p id="demo" style="visiblity:hidden></p>
+<p id="demo" style="visiblity:hidden"></p>
 
   
 
