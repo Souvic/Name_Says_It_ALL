@@ -6,6 +6,18 @@
 </head>
 <body>
 <script>
+	
+	
+	
+	function texty(x){
+	if(x==4){return("Number Four People
+Number Four People are lucky, happy, good at what they do, shy, a gambler, independent, humble, and aloof. They might have many children
+
+You are the kind of person that people like to be around - affectionate, obliging, always pleasant. You have a tendency, though, to get too sentimental and seem superficial. Being cautious and conservative, you are successful in business but would also make a good lawyer, diplomat, or actor. Number Four People are articulate, talented, and ambitious. They are virtuous, reserved, and have excellent taste. Number Four People are admired, trusted, and are often financially lucky. They are fond of gossip but are tactful and generally kind. Number Four People seldom lose their temper. They are clever at business and being conscientious, never back out of a contract. They would make good gamblers for they have the uncanny gift of choosing the right thing. However, they seldom gamble, as they are conservative and wise. Number Four People fall under a most fortunate number! Their number is the emblem of long life and they possess the powers of the moon. Number Four People are very sensitive to beauty. They are gracious and soft spoken. Number Four People are the diplomats and the peace-makers. They enjoy a tranquil life and love a quiet evening at home. Number Four People are reserved and very artistic. They are thorough and good scholars. When Number Four People are moody, which is often, they will appear totally indifferent to the world.")}
+			
+	
+	
+	}
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -75,7 +87,7 @@
 }
     
 	  console.log(val)
-	if(val%9==0){document.getElementById("demo").innerHTML = 9;}else{document.getElementById("demo").innerHTML = val%9;}
+	if(val%9==0){document.getElementById("demo").innerHTML = 9;}else{document.getElementById("demo").innerHTML = texty(val%9);}
 	  document.getElementById("demo").style.visibility='hidden';
     
 }
