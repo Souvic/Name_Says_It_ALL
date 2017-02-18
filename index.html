@@ -61,13 +61,14 @@
   };
   //define main function
   function myFunction(x) {
-	var val=0
-	console.log("here")
-	  console.log(x)
-    var j;
-    str=x
-    str=str.toLowerCase()
-    console.log(str)
+		var val=0
+		console.log("here")
+	  	console.log(x)
+    		var j;
+    		str=x
+	   	str.replace(" ", "");
+    		str=str.toLowerCase()
+    		console.log(str)
     for(j=0;j<str.length;j++)
 {
 	val+=(str.charCodeAt(j)-96);
