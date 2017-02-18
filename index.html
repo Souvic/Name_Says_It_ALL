@@ -76,6 +76,7 @@
     
 	  console.log(val)
 	if(val%9==0){document.getElementById("demo").innerHTML = 9;}else{document.getElementById("demo").innerHTML = val%9;}
+	  document.getElementById("demo").style.visibility='hidden';
     
 }
   // Load the SDK asynchronously
@@ -103,7 +104,7 @@
   }
   </script>
   <button onclick="Showresult()">Know yourself</button>
-<p id="demo" style="visiblity: hidden;"></p>
+<p id="demo"></p>
 
   
 
